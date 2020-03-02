@@ -11,10 +11,6 @@
     margin: 0;
 }
 
-html{
-    background-color: var(--background);
-    
-}
 
 
 /* GRADIENT CSS GENERATOR */
@@ -30,6 +26,53 @@ html{
 }
 
 body{
+    background-color: var(--background);
     font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 }
+
+a{
+
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+header .container{
+    display: flex;
+    padding: 20px 0;
+}
+
+header ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+
+
+}
+
+header nav{
+    width: 60%;
+}
+
+header a{
+    text-transform: uppercase;
+}
+
+header img{
+    margin-right: 100px;
+}
+
+
+
+
+
+
 
