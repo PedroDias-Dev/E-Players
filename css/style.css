@@ -121,6 +121,17 @@ header img{
     color: red;
 }
 
+.banner{
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/meta_mundo.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
