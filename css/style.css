@@ -95,10 +95,20 @@ header img{
 
 .partidas .container{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: space-around;
+    align-items: center;
     flex-flow: wrap;
 }
+
+
+.proximas_partidas{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+
 
 .partida img{
     width: 40px;
@@ -168,7 +178,7 @@ header img{
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    min-height: 700px;
+    min-height: 500px;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
     display: flex;
     justify-content: flex-end;
@@ -194,9 +204,9 @@ header img{
     position: absolute;
     z-index: 99;
     top: -20px;
-    left: 100px;
+    left: 300px;
     width: 100%;
-    max-width: 35%;
+    max-width: 25%;
 }
 
 .texto_sobre{
@@ -452,3 +462,65 @@ select{
     margin: auto;
     margin-top: 10px;
 }
+
+
+/* ////// INICIO RESPONSIVIDADE ////// */
+/* 1200px */
+
+@media (max-width: 800px){
+ 
+    .container{
+        width: 90%;
+    }
+
+    header .container img{
+        max-width: 180px;
+    }
+
+    .em_andamento{
+        width: 0%;
+    }
+
+    .partidas .container{
+        align-items: flex-start;
+        flex-flow: nowrap;
+    }
+
+    .em_andamento{
+        width: 30%;
+    }
+
+    .proximas_partidas{
+        width: 70%;
+        flex-flow: wrap;
+    }
+
+    .ligas h4{
+        font-size: 30px;
+    }
+
+    .ligas h3{
+        font-size: 60px;
+    }
+
+    .ligas img{
+        height: 90px;
+    }
+
+    .sobre img{
+        max-width: 50%;
+        left: 20px;
+    }
+
+    .texto_sobre{
+        width: 50%;
+        margin-right: 30px;
+    }
+
+    .content{
+        margin-top: 30px;
+    }
+
+    
+}/*fim media query 1200px */
+
