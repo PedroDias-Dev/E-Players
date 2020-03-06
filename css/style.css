@@ -463,6 +463,9 @@ select{
     margin-top: 10px;
 }
 
+header .fa-bars{
+    display: none;
+}
 
 /* ////// INICIO RESPONSIVIDADE ////// */
 /* 1200px */
@@ -470,7 +473,7 @@ select{
 @media (max-width: 800px){
  
     .container{
-        width: 90%;
+        width: 95%;
     }
 
     header .container img{
@@ -521,6 +524,60 @@ select{
         margin-top: 30px;
     }
 
+    .card img{
+        margin-top: 2.5em;
+        margin-left: 1em;
+    }
+    .content section{
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    .resultado p{
+        margin-top: 0.5em;
+    }
+
     
 }/*fim media query 1200px */
 
+@media(max-width: 460px){
+    header .fa-bars{
+        color: var(--purple);
+        font-size: 3em;
+        display: block;
+    }
+
+    header .container div{
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header .container div a{
+        margin-left: 3em;
+    }
+
+    #menu{
+        position: absolute;
+        top: 5.5em;
+        left: 0;
+        width: 100%;
+        /* background-color: red; */
+        background-color: var(--purple);
+        display: none;
+    }
+
+    #menu ul{
+        flex-direction: column;
+        height: 350px;
+        margin-left: 1em;
+    }
+
+    #menu a{
+        display: block;
+        padding: 0.5em 0;
+        /* background-color: lightblue; */
+    }
+
+}
